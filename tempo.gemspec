@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.licenses = ["MIT"]
   spec.authors = ["Ikimea"]
+  spec.email   = ["support@ikimea.com"]
   spec.description = %q{Send notifications to Tempo about Capistrano deployments.}
   spec.summary = %q{Send notifications to Tempo about Capistrano deployments.}
   spec.homepage = "https://github.com/tempo-project/capistrano-tempo"
@@ -18,7 +19,6 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
   spec.files = `git ls-files`.split($/)
-  spec.executables = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
 
   spec.add_dependency 'json'
   spec.add_development_dependency "rspec"
