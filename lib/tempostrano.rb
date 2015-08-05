@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-load File.expand_path("../tempo/tasks/tempo.rake", __FILE__)
+load File.expand_path("../lib/tempostrano/tasks/tempo.rake", __FILE__)
 
 module Tempo
   def self.post(project: nil, token: nil, message: nil, payload: {})
