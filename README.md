@@ -1,12 +1,18 @@
-# Capistrano::Tempo
+# Capistrano::Tempo (Tempostrano)
 
-Notify Tempo about Capistrano deployments. These instructions are for Capistrano 3.
+Notify [Tempo](https://tempo-project.com) about [Capistrano](http://www.capistranorb.com) deployments. These instructions are for Capistrano 3.
+
+## Requirements
+
+- Capistrano >= 3.1.0
+- Ruby >= 2.0
+- A Tempo account
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano-tempo'
+    gem 'tempostrano', require: false
 
 And then execute:
 
@@ -14,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install capistrano-tempo
+    $ gem install tempostrano
 
 ## Usage
 
@@ -22,7 +28,7 @@ Load this gem in Capfile:
 
 ```ruby
 # Capfile
-require 'capistrano/tempo'
+require 'tempostrano'
 ```
 
 Setup your Tempo credentials in `deploy.rb`
